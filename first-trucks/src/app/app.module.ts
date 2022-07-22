@@ -3,21 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserLoginComponent } from './user-login/user-login.component';
-import { UserLogoutComponent } from './user-logout/user-logout.component';
+import { UserLoginComponent } from './user-authentification/user-login/user-login.component';
+import { UserLogoutComponent } from './user-authentification/user-logout/user-logout.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UserLoginComponent,
-    UserLogoutComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, UserLoginComponent, UserLogoutComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

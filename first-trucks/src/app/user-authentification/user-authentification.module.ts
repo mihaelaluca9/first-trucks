@@ -3,15 +3,11 @@ import { CommonModule } from '@angular/common';
 import { UserLogoutComponent } from './user-logout/user-logout.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 
-
-
 @NgModule({
   declarations: [
-    UserLogoutComponent,
-    UserLoginComponent
+    // UserLogoutComponent,
+    // UserLoginComponent
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
 })
-export class UserAuthentificationModule { }
+export class UserAuthentificationModule {}

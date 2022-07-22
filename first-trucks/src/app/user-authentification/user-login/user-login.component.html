@@ -1,1 +1,38 @@
-<p>user-login works!</p>
+<nav class="sdds-nav">
+  <div class="sdds-nav__left">
+    <div class="sdds-nav__app-name">First trucks</div>
+  </div>
+  <div class="sdds-nav__right">
+    <a class="sdds-nav__item sdds-nav__app-logo" href="#"></a>
+  </div>
+</nav>
+
+<div style="padding: 0 24px">
+  <p class="sdds-headline-04">Login to</p>
+  <p class="sdds-headline-06">First trucks</p>
+  <div class="sdds-divider-light" style="margin: 5px; width: 400px"></div>
+
+  <div style="width: 208px">
+    <sdds-textfield
+      size="md"
+      ngDefaultControl
+      formControlName="username"
+      type="text"
+      placeholder="Username"
+    >
+      <span slot="sdds-label">Username</span>
+    </sdds-textfield>
+  </div>
+
+  <div style="width: 208px">
+    <sdds-textfield
+      size="md"
+      ngDefaultControl
+      type="password"
+      formControlName="password"
+      placeholder="Password"
+    >
+      <span slot="sdds-label">Password</span>
+    </sdds-textfield>
+  </div>
+</div>
