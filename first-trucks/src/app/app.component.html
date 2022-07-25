@@ -1,7 +1,13 @@
+<app-header (eventFromHeader)="handleEvent($event)"></app-header>
+
+<div class="sdds-push">
+  <app-sidebar (eventFromSidebar)="handleEvent($event)" [mobileMenuOpen]="mobileMenuOpen"></app-sidebar>
+</div>
 <sdds-theme name="scania"></sdds-theme>
-<sdds-dropdown
+
+<!-- <sdds-dropdown
   placeholder="Select option">
   <sdds-dropdown-option value="option-1">Option 1</sdds-dropdown-option>
   <sdds-dropdown-option value="option-2">Option 2</sdds-dropdown-option>
   <sdds-dropdown-option value="option-3">Option 3</sdds-dropdown-option>
-</sdds-dropdown>
+</sdds-dropdown> -->
