@@ -1,44 +1,44 @@
-<nav class="sdds-nav">
-  <div class="sdds-nav__left">
-    <div class="sdds-nav__app-name">First trucks</div>
-  </div>
-  <div class="sdds-nav__right">
-    <a class="sdds-nav__item sdds-nav__app-logo" href="#"></a>
-  </div>
-</nav>
+<div style="height: 100%; overflow: hidden">
+  <nav class="sdds-nav">
+    <div class="sdds-nav__left">
+      <div class="sdds-nav__app-name">First trucks</div>
+    </div>
+    <div class="sdds-nav__right">
+      <a class="sdds-nav__item sdds-nav__app-logo" href="#"></a>
+    </div>
+  </nav>
 
-<div class="login-form">
-  <p class="sdds-headline-04">Login to</p>
-  <p class="sdds-text-grey-700">First trucks</p>
-  <div class="sdds-divider-light" style="margin: 5px; width: 208px"></div>
+  <div class="login-wrapper">
+    <div class="login-form">
+      <p class="sdds-headline-04">Login to</p>
+      <p class="sdds-text-grey-700">First trucks</p>
+      <div class="sdds-divider-light divider"></div>
 
-  <div style="width: 208px">
-    <sdds-textfield
-      size="md"
-      ngDefaultControl
-      formControlName="username"
-      type="text"
-      placeholder="Username"
-    >
-      <span slot="sdds-label">Username</span>
-    </sdds-textfield>
+      <sdds-textfield
+        size="md"
+        ngDefaultControl
+        formControlName="username"
+        type="text"
+        placeholder="Username"
+      >
+        <span slot="sdds-label">Username</span>
+      </sdds-textfield>
+
+      <sdds-textfield
+        size="md"
+        ngDefaultControl
+        type="password"
+        formControlName="password"
+        placeholder="Password"
+      >
+        <span slot="sdds-label">Password</span>
+      </sdds-textfield>
+
+      <button class="sdds-btn sdds-btn-primary sdds-btn-md">Log in</button>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="../../../assets/login-image.jpeg" />
+    </div>
   </div>
-
-  <div style="width: 208px">
-    <sdds-textfield
-      size="md"
-      ngDefaultControl
-      type="password"
-      formControlName="password"
-      placeholder="Password"
-    >
-      <span slot="sdds-label">Password</span>
-    </sdds-textfield>
-  </div>
-
-  <button class="sdds-btn sdds-btn-primary sdds-btn-md" style="width: 208px">
-    Log in
-  </button>
 </div>
-
-<!-- <div><img src="../../../assets/login-image.jpeg" /></div> -->
